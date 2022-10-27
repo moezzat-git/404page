@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 59.37em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 120rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  margin-top: 2.4rem;
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4.8rem;
+}
+
+.signature {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #b9bdcf;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.signature__name {
+  font-weight: 500;
+  border-bottom: 1px solid currentColor;
+}
+
+.heading {
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #333;
+  letter-spacing: -0.1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  align-items: center;
+  gap: 10%;
+  margin-bottom: 4.8rem;
+}
+.content__img {
+  width: 100%;
+}
+.content__heading {
+  font-size: 6.4rem;
+  font-weight: 700;
+  letter-spacing: -0.15rem;
+  margin-bottom: 3.6rem;
+}
+@media only screen and (max-width: 59.37em) {
+  .content__heading {
+    font-size: 4.8rem;
+  }
+}
+.content__desc {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  margin-bottom: 6.4rem;
+}
+@media only screen and (max-width: 59.37em) {
+  .content__desc {
+    font-size: 1.8rem;
+  }
+}
+.content__btn:link, .content__btn:visited {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15rem;
+  padding: 2.4rem 4.8rem;
+  color: #fff;
+  background-color: #333;
+  transition: all 0.2s;
+  display: inline-block;
+}
+.content__btn:link:hover, .content__btn:visited:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/*# sourceMappingURL=style.css.map */

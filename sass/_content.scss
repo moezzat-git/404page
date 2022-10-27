@@ -1,0 +1,63 @@
+.heading {
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #333;
+  letter-spacing: -0.1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  align-items: center;
+  gap: 10%;
+
+  margin-bottom: 4.8rem;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__heading {
+    font-size: 6.4rem;
+    font-weight: 700;
+    letter-spacing: -0.15rem;
+    margin-bottom: 3.6rem;
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 4.8rem;
+    }
+  }
+
+  &__desc {
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    margin-bottom: 6.4rem;
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__btn:link,
+  &__btn:visited {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    padding: 2.4rem 4.8rem;
+    color: #fff;
+    background-color: #333;
+    transition: all 0.2s;
+
+    display: inline-block;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
